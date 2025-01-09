@@ -7,6 +7,8 @@ import DataFetch from './hooks/useEffect/DataFetch';
 import CleanUp from './hooks/useEffect/CleanUp';
 import MultiEffects from './hooks/useEffect/MultiEffects';
 import AsyncEffect from './hooks/useEffect/AsyncEffect';
+import ThemeProvider from './hooks/useContext/ThemeProvider';
+import ThemedComponent from './hooks/useContext/ThemedComponent';
 
 function App() {
   return (
@@ -24,6 +26,14 @@ function App() {
       {/* <CleanUp /> */}
       {/* <MultiEffects/> */}
       {/* <AsyncEffect /> */}
+
+      {/* useContext example */}
+      {/* <ThemeProvider>
+        <ThemedComponent />
+      </ThemeProvider> */}
+
+      
+
     </div>
   );
 }

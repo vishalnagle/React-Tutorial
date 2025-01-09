@@ -1,0 +1,31 @@
+
+The useContext hook in React provides a way to access values from a context in a functional component. 
+It is a part of React's Context API, which enables sharing state 
+or data (like theme, user data, or settings) across a component tree without passing props down manually through every level.
+
+How useContext Works:
+
+1.Context Creation: A context is created using React.createContext(). 
+This creates a Context object that can be used to provide and consume data.
+2.Provider Component: The Context.Provider component makes the context value available to all components within its tree.
+3.Consumption with useContext: Instead of using the Consumer component, 
+functional components can use the useContext hook to consume context values directly.
+
+Why Use useContext?
+
+1.Avoids prop drilling: Context allows data to be passed deep into the component tree without manually passing props through intermediate components.
+2.Simplifies state management for global data.
+
+const value = useContext(MyContext);
+
+MyContext: The context object created using React.createContext().
+value: The current value of the context.
+
+Example: Theme Context
+
+How It Works:
+
+1.ThemeProvider: Wraps the application and provides the theme data (theme and toggleTheme).
+2.ThemedComponent: Accesses the context using useContext and renders based on the current theme.
+3.toggleTheme: Changes the theme between "light" and "dark," and the UI updates automatically
+
