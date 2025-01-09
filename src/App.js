@@ -1,10 +1,29 @@
 
 import './App.css';
+import Counter from './hooks/useState/Counter';
+import ObjectState from './hooks/useState/ObjectState';
+import UpdatingArray from './hooks/useState/UpdatingArray';
+import DataFetch from './hooks/useEffect/DataFetch';
+import CleanUp from './hooks/useEffect/CleanUp';
+import MultiEffects from './hooks/useEffect/MultiEffects';
+import AsyncEffect from './hooks/useEffect/AsyncEffect';
 
 function App() {
   return (
     <div className="App">
-      <h1 style={{color:"white"}}>Hello World!</h1>
+
+      {/* useState examples */}
+
+      {/* <Counter /> */}
+      {/* <ObjectState /> */}
+      {/* <UpdatingArray /> */}
+
+      {/* useEffect examples */}
+
+      {/* <DataFetch />  */}
+      {/* <CleanUp /> */}
+      {/* <MultiEffects/> */}
+      {/* <AsyncEffect /> */}
     </div>
   );
 }

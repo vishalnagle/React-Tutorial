@@ -1,0 +1,72 @@
+
+The useEffect hook in React is one of the most powerful and commonly used hooks. 
+It allows you to perform side effects in functional components. 
+Side effects include tasks like data fetching, subscriptions, manually changing the DOM, logging, and more.
+
+Key Concepts of useEffect:
+
+1.Purpose:
+
+Synchronize component with external systems.
+Perform side effects like fetching data, listening to events, or manually updating the DOM.
+
+Arguments:
+
+useEffect(callback, dependencies)
+callback: A function containing the side-effect logic.
+dependencies: An array of values that the effect depends on. 
+The effect re-runs whenever a dependency changes.
+
+
+Lifecycle Behavior:
+
+1.The useEffect hook runs after the render, not during it.
+2.By default, it runs after every render unless you provide a dependencies array.
+3.Cleanup:
+Return a cleanup function from the callback to handle things like unsubscribing, 
+clearing timeouts, or other resource management.
+
+Basic Examples
+
+1. Basic useEffect Example
+
+import React, { useEffect, useState } from "react";
+
+function Timer() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("Component rendered or updated");
+  });
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+Behavior: This effect runs after every render (initial render + every update).
+
+Common Patterns:
+
+1.Empty Dependency Array ([]):
+
+Runs only on mount and unmount.
+Mimics componentDidMount and componentWillUnmount.
+
+2.Dynamic Dependencies:
+Runs only when specified dependencies change.
+
+3.No Dependency Array:
+Runs after every render, similar to componentDidUpdate.
+
+When to Use useEffect:
+
+1.Fetching data from APIs.
+2.Subscribing to events (e.g., WebSocket, DOM events).
+3.Cleaning up resources (e.g., event listeners, intervals).
+4.Updating the document title or manipulating the DOM.
+
+

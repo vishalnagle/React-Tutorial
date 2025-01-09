@@ -1,0 +1,28 @@
+
+The useState hook is a fundamental React Hook that allows you to add state management to functional components. 
+It provides a way to store and update local state within a component.
+
+Understanding useState:
+
+const [state, setState] = useState(initialState);
+
+state: Represents the current state value.
+setState: A function to update the state value.
+initialState: The initial value of the state.
+
+Features:
+
+1.Reactivity: When setState is called, the component re-renders with the updated state.
+2.Preservation: State is preserved between renders.
+3.Lazy Initialization: The initialState can be a function, 
+4.which will only execute once during the initial render.
+
+
+Key Points to Remember:
+
+1.Immutable Updates: Always create a new object or array when updating state. 
+React relies on immutability to detect changes.
+2.Multiple State Variables: You can use multiple useState calls for separate pieces of state.
+3.Persisted State: State persists between renders but resets on component unmount.
+4.By understanding and practicing these examples, 
+you'll master the useState hook and effectively manage state in functional React components.

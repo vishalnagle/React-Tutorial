@@ -1,0 +1,62 @@
+
+As of React 19 (and earlier), here’s a comprehensive list of the hooks available:
+
+Basic Hooks:
+
+1.useState
+Manages state in functional components.
+
+2.useEffect
+Handles side effects like data fetching, subscriptions, or manually changing the DOM.
+
+3.useContext
+Provides access to the nearest Context value in the component tree.
+
+
+Additional Hooks:
+
+4.useReducer
+An alternative to useState for managing more complex state logic.
+
+5.useCallback
+Memoizes a callback function, preventing unnecessary re-creations.
+
+6.useMemo
+Memoizes a value to optimize performance.
+
+7.useRef
+Creates a mutable reference object that persists across renders.
+
+8.useImperativeHandle
+Customizes the instance value exposed by useRef when using forwardRef.
+
+9.useLayoutEffect
+Similar to useEffect but fires synchronously after all DOM mutations.
+
+10.useDebugValue
+Displays a label for custom hooks in React DevTools.
+
+
+Newer Hooks:
+
+11.useTransition
+Allows marking updates as non-urgent (introduced for concurrent rendering).
+
+12.useDeferredValue
+Defers a less urgent value until higher-priority updates are processed.
+
+13.useId
+Generates unique IDs that are stable across server and client renders.
+
+14.useSyncExternalStore
+A hook for subscribing to external stores in a way that supports concurrent rendering.
+
+15.useInsertionEffect
+Fires before DOM mutations and can be used for injecting styles.
+
+Server-Specific Hooks (React 18 and Later):
+
+16.useCacheRefresh
+Used for managing cache in server components.
+
+
