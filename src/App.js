@@ -14,25 +14,25 @@ function App() {
   return (
     <div className="App">
 
-      {/* useState examples */}
+      {/* 1.useState examples */}
 
       {/* <Counter /> */}
       {/* <ObjectState /> */}
       {/* <UpdatingArray /> */}
 
-      {/* useEffect examples */}
+      {/* 2.useEffect examples */}
 
       {/* <DataFetch />  */}
       {/* <CleanUp /> */}
       {/* <MultiEffects/> */}
       {/* <AsyncEffect /> */}
 
-      {/* useContext example */}
+      {/* 3.useContext example */}
       {/* <ThemeProvider>
         <ThemedComponent />
       </ThemeProvider> */}
 
-      
+
 
     </div>
   );
