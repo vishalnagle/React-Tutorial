@@ -9,6 +9,9 @@ import MultiEffects from './hooks/useEffect/MultiEffects';
 import AsyncEffect from './hooks/useEffect/AsyncEffect';
 import ThemeProvider from './hooks/useContext/ThemeProvider';
 import ThemedComponent from './hooks/useContext/ThemedComponent';
+import ReducerCounter from './hooks/useReducer/ReducerCounter';
+import SignupForm from './hooks/useReducer/SignupForm';
+import ReducerTodoList from './hooks/useReducer/ReducerTodoList';
 
 function App() {
   return (
@@ -32,8 +35,13 @@ function App() {
         <ThemedComponent />
       </ThemeProvider> */}
 
+      {/* 4.useReducer example */}
 
+      {/* <ReducerCounter/> */}
+      {/* <SignupForm/> */}
+      {/* <ReducerTodoList/> */}
 
+      
     </div>
   );
 }
