@@ -24,6 +24,7 @@ import DomAccess from './hooks/useRef/DomAccess';
 import CounterRef from './hooks/useRef/CounterRef';
 import TimerRef from './hooks/useRef/TimerRef';
 import PreviousStateRef from './hooks/useRef/PreviousStateRef';
+import ParentImperative from './hooks/useImperativeHandle/ParentImperative';
 
 function App() {
   return (
@@ -73,6 +74,10 @@ function App() {
       {/* <TimerRef/> */}
       {/* <PreviousStateRef/> */}
 
+
+      {/* 8. useImperativeHandle example */}
+
+      {/* <ParentImperative/> */}
 
       
 
