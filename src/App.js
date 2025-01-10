@@ -12,6 +12,10 @@ import ThemedComponent from './hooks/useContext/ThemedComponent';
 import ReducerCounter from './hooks/useReducer/ReducerCounter';
 import SignupForm from './hooks/useReducer/SignupForm';
 import ReducerTodoList from './hooks/useReducer/ReducerTodoList';
+import CallbackUse from './hooks/useCallback/CallbackUse';
+import PassingCallback from './hooks/useCallback/PassingCallback';
+import DependencyCallback from './hooks/useCallback/DependencyCallback';
+import ExpensiveOperation from './hooks/useCallback/ExpensiveOperation';
 
 function App() {
   return (
@@ -35,13 +39,20 @@ function App() {
         <ThemedComponent />
       </ThemeProvider> */}
 
-      {/* 4.useReducer example */}
+      {/* 4.useReducer examples */}
 
       {/* <ReducerCounter/> */}
       {/* <SignupForm/> */}
       {/* <ReducerTodoList/> */}
 
-      
+
+      {/* 5. useCallback examples */}
+      {/* <CallbackUse/> */}
+      {/* <PassingCallback/> */}
+      {/* <DependencyCallback/> */}
+      <ExpensiveOperation/>
+
+
     </div>
   );
 }
