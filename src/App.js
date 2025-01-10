@@ -16,6 +16,10 @@ import CallbackUse from './hooks/useCallback/CallbackUse';
 import PassingCallback from './hooks/useCallback/PassingCallback';
 import DependencyCallback from './hooks/useCallback/DependencyCallback';
 import ExpensiveOperation from './hooks/useCallback/ExpensiveOperation';
+import MemoBasicUsage from './hooks/useMemo/MemoBasicUsage';
+import FilterArrayMemo from './hooks/useMemo/FilterArrayMemo';
+import ReCreationFunc from './hooks/useMemo/ReCreationFunc';
+import MemoDerivedData from './hooks/useMemo/MemoDerivedData';
 
 function App() {
   return (
@@ -45,14 +49,19 @@ function App() {
       {/* <SignupForm/> */}
       {/* <ReducerTodoList/> */}
 
-
       {/* 5. useCallback examples */}
       {/* <CallbackUse/> */}
       {/* <PassingCallback/> */}
       {/* <DependencyCallback/> */}
-      <ExpensiveOperation/>
+      {/* <ExpensiveOperation/> */}
 
 
+      {/* 6. useMemo examples */}
+      
+      {/* <MemoBasicUsage/> */}
+      {/* <FilterArrayMemo/> */}
+      {/* <ReCreationFunc/> */}
+      <MemoDerivedData/>
     </div>
   );
 }
