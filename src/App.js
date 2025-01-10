@@ -20,6 +20,10 @@ import MemoBasicUsage from './hooks/useMemo/MemoBasicUsage';
 import FilterArrayMemo from './hooks/useMemo/FilterArrayMemo';
 import ReCreationFunc from './hooks/useMemo/ReCreationFunc';
 import MemoDerivedData from './hooks/useMemo/MemoDerivedData';
+import DomAccess from './hooks/useRef/DomAccess';
+import CounterRef from './hooks/useRef/CounterRef';
+import TimerRef from './hooks/useRef/TimerRef';
+import PreviousStateRef from './hooks/useRef/PreviousStateRef';
 
 function App() {
   return (
@@ -61,7 +65,17 @@ function App() {
       {/* <MemoBasicUsage/> */}
       {/* <FilterArrayMemo/> */}
       {/* <ReCreationFunc/> */}
-      <MemoDerivedData/>
+      {/* <MemoDerivedData/> */}
+
+      {/* 7. useRef examples */}
+      {/* <DomAccess/> */}
+      {/* <CounterRef/> */}
+      {/* <TimerRef/> */}
+      {/* <PreviousStateRef/> */}
+
+
+      
+
     </div>
   );
 }
