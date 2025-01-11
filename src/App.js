@@ -31,6 +31,7 @@ import SyncedState from './hooks/useLayoutEffect/SyncedState';
 import DebugCounter from './hooks/useDebugValue/DebugCounter';
 import LargeListFilter from './hooks/useTransition/LargeListFilter';
 import SearchFilter from './hooks/useDeferredValue/SearchFilter';
+import StoreCounterComponent from './hooks/useSyncExternalStor/StoreCounterComponent';
 
 function App() {
   return (
@@ -105,7 +106,10 @@ function App() {
 
       {/* <SearchFilter/> */}
 
-      
+      {/*13. useId example only added doc file*/}
+
+      {/*14. useSyncExternalStore example */}
+      {/* <StoreCounterComponent/> */}
 
     </div>
   );
