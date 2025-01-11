@@ -117,6 +117,8 @@ function App() {
 
       {/* 16. useCacheRefresh hook doc added */}
 
+      {/* 17. Custom hook examples added */}
+
     </div>
   );
 }

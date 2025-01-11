@@ -1,0 +1,18 @@
+
+Custom hooks in React are user-defined functions that allow you to encapsulate and reuse stateful logic across components. 
+They help in separating logic from the UI, making the code more reusable and cleaner. 
+Custom hooks use the use prefix (e.g., useFetch, useLocalStorage) and can utilize React's built-in hooks like useState, useEffect, or others.
+
+Why Use Custom Hooks?
+
+1.Code Reusability: Encapsulate logic and use it across multiple components.
+2.Separation of Concerns: Keeps components focused on rendering and UI logic.
+3.Maintainability: Reduces duplication and makes testing easier.
+
+Key Points:
+
+1.Always prefix custom hooks with use.
+2.Follow the Rules of Hooks: Call hooks at the top level and never inside loops, conditions, or nested functions.
+3.Custom hooks can return anything: values, functions, or a combination.
+
+
