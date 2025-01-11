@@ -25,6 +25,9 @@ import CounterRef from './hooks/useRef/CounterRef';
 import TimerRef from './hooks/useRef/TimerRef';
 import PreviousStateRef from './hooks/useRef/PreviousStateRef';
 import ParentImperative from './hooks/useImperativeHandle/ParentImperative';
+import DOMDimensions from './hooks/useLayoutEffect/DOMDimensions';
+import ScrollToBottom from './hooks/useLayoutEffect/ScrollToBottom';
+import SyncedState from './hooks/useLayoutEffect/SyncedState';
 
 function App() {
   return (
@@ -62,7 +65,7 @@ function App() {
 
 
       {/* 6. useMemo examples */}
-      
+
       {/* <MemoBasicUsage/> */}
       {/* <FilterArrayMemo/> */}
       {/* <ReCreationFunc/> */}
@@ -79,7 +82,15 @@ function App() {
 
       {/* <ParentImperative/> */}
 
-      
+
+      {/* 9. useLayoutEffect examples */}
+
+      {/* <DOMDimensions /> */}
+      {/* <ScrollToBottom/> */}
+      {/* <SyncedState/> */}
+
+
+      {/* 10. */}
 
     </div>
   );

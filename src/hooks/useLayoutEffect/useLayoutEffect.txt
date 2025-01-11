@@ -1,0 +1,30 @@
+
+The useLayoutEffect hook in React is similar to useEffect, but it fires synchronously after all DOM mutations. 
+This means it is executed before the browser paints the screen.
+
+It is useful when you need to:
+
+1.Measure the DOM after rendering but before the user sees any updates.
+2.Perform DOM operations like setting the scroll position or applying styles based on the DOM measurements.
+
+Key Differences Between useLayoutEffect and useEffect:
+
+1.Execution Timing:
+
+useEffect: Fires after the paint (asynchronously).
+useLayoutEffect: Fires before the paint (synchronously).
+
+2.Use Cases:
+
+useEffect: For side effects that don’t affect the layout, like API calls or logging.
+useLayoutEffect: For DOM manipulations or measurements.
+
+When to Use useLayoutEffect:
+
+Use useLayoutEffect only when you need to:
+
+1.Measure DOM nodes after rendering (like size, position).
+2.Synchronize a DOM mutation with a state change before the browser repaints.
+3.Fix layout glitches or visual inconsistencies.
+
+For all other side effects, prefer useEffect as it doesn't block the browser paint and improves performance.
