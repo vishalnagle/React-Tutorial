@@ -1,0 +1,26 @@
+
+The useDebugValue hook is a React developer tool utility that allows you to display custom labels for custom hooks in React DevTools. 
+This hook is purely for debugging purposes and does not affect the behavior of your application. 
+It provides additional context about the state or value returned by a custom hook, making it easier to understand and debug custom hook implementations.
+
+Syntax:
+
+useDebugValue(value, formatFunction?)
+
+value: The value to display in React DevTools.
+formatFunction: (Optional) A function to format the value before displaying it. 
+This allows you to provide more meaningful or readable information.
+
+Why Use useDebugValue?
+
+When using custom hooks in a complex application, it can be challenging to debug or understand the current state or value returned by the hook.
+useDebugValue allows you to label or transform the value in a way that makes sense for debugging.
+
+Key Points:
+
+1.Limited to DevTools: useDebugValue is invisible in your application but useful for React DevTools.
+2.Use for Custom Hooks: It is primarily used to provide meaningful information about custom hooks.
+3.Optional Formatter: The optional formatting function allows for customization of debug information.
+
+By using useDebugValue, you can make your debugging experience smoother and more efficient, especially in complex applications with multiple custom hooks.
+

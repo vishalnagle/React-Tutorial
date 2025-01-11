@@ -28,6 +28,7 @@ import ParentImperative from './hooks/useImperativeHandle/ParentImperative';
 import DOMDimensions from './hooks/useLayoutEffect/DOMDimensions';
 import ScrollToBottom from './hooks/useLayoutEffect/ScrollToBottom';
 import SyncedState from './hooks/useLayoutEffect/SyncedState';
+import DebugCounter from './hooks/useDebugValue/DebugCounter';
 
 function App() {
   return (
@@ -90,7 +91,11 @@ function App() {
       {/* <SyncedState/> */}
 
 
-      {/* 10. */}
+      {/* 10. useDebugValue example */}
+      {/* <DebugCounter/> */}
+
+
+      
 
     </div>
   );
