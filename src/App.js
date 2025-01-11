@@ -30,6 +30,7 @@ import ScrollToBottom from './hooks/useLayoutEffect/ScrollToBottom';
 import SyncedState from './hooks/useLayoutEffect/SyncedState';
 import DebugCounter from './hooks/useDebugValue/DebugCounter';
 import LargeListFilter from './hooks/useTransition/LargeListFilter';
+import SearchFilter from './hooks/useDeferredValue/SearchFilter';
 
 function App() {
   return (
@@ -98,8 +99,13 @@ function App() {
 
       {/* 11. useTransition example */}
 
-      <LargeListFilter/>
+      {/* <LargeListFilter/> */}
 
+      {/* 12. useDeferredValue example */}
+
+      {/* <SearchFilter/> */}
+
+      
 
     </div>
   );

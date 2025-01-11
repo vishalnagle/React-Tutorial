@@ -1,0 +1,46 @@
+
+
+The useDeferredValue hook was introduced in React 18 to improve performance by deferring the processing of a value until the browser has idle time. 
+It is primarily used for optimizing UI rendering in scenarios where frequent updates can lead to unnecessary re-renders and reduced performance.
+
+How it Works:
+
+useDeferredValue returns a deferred version of a value that might lag behind the original value if the rendering is busy.
+The deferred value updates less frequently, allowing React to prioritize more urgent updates like user interactions over less critical updates like displaying new search results.
+
+Key Points:
+
+1.Debouncing vs useDeferredValue:
+
+Debouncing: Delays updating a value by a fixed time.
+useDeferredValue: React dynamically decides when to update the deferred value based on rendering workload.
+
+2.Main Use Case:
+
+Optimizing expensive computations or rendering operations, such as filtering a large list of items based on user input.
+
+3.Behavior:
+
+The hook doesn't introduce artificial delays. 
+Instead, it defers updating the value only when necessary to ensure smoother UI interactions.
+
+Syntax:
+
+const deferredValue = useDeferredValue(value);
+
+When to Use:
+
+1.Use useDeferredValue when you want to reduce unnecessary rendering or processing without blocking user interactions.
+
+2.Ideal for:
+
+Search filters
+Animations
+Infinite scrolling
+Expensive computations
+
+When Not to Use
+Avoid using it if:
+
+Updates must be immediate and cannot be deferred.
+There’s no performance issue with frequent updates.
