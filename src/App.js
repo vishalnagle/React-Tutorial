@@ -32,6 +32,7 @@ import DebugCounter from './hooks/useDebugValue/DebugCounter';
 import LargeListFilter from './hooks/useTransition/LargeListFilter';
 import SearchFilter from './hooks/useDeferredValue/SearchFilter';
 import StoreCounterComponent from './hooks/useSyncExternalStor/StoreCounterComponent';
+import DynamicStyles from './hooks/useInsertionEffect/DynamicStyles';
 
 function App() {
   return (
@@ -106,10 +107,15 @@ function App() {
 
       {/* <SearchFilter/> */}
 
-      {/*13. useId example only added doc file*/}
+      {/* 13. useId example only added doc file*/}
 
-      {/*14. useSyncExternalStore example */}
+      {/* 14. useSyncExternalStore example */}
       {/* <StoreCounterComponent/> */}
+
+      {/* 15. useInsertionEffect example */}
+      {/* <DynamicStyles/> */}
+
+      {/* 16. useCacheRefresh hook doc added */}
 
     </div>
   );
