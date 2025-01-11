@@ -1,0 +1,30 @@
+
+The useTransition hook is a React Hook introduced in React 18 for managing transitions, which allows you to mark certain state updates as non-urgent. 
+These updates can be deferred, meaning React will prioritize more urgent updates (like user input or animations) over them. 
+This is especially useful in scenarios where some state updates (like filtering a large list) can take longer and don't need to block the rendering of immediate feedback for the user.
+
+Key Features of useTransition:
+
+1.Start a Transition: The hook provides a startTransition function that wraps the state updates you want to treat as non-urgent.
+2.Track the Transition State: It also provides a boolean isPending, which indicates whether the transition is still in progress.
+3.Non-blocking Rendering: React will render the urgent updates immediately and defer the non-urgent ones, avoiding UI freezes.
+
+Syntax:
+
+const [isPending, startTransition] = useTransition();
+
+
+Parameters and Return Value:
+
+isPending: A boolean that is true while the transition is ongoing and false when it's complete.
+startTransition: A function that you use to wrap non-urgent state updates.
+
+
+Key Points to Note:
+
+1.Concurrent Rendering: React schedules transitions using concurrent rendering, which enables smooth and responsive UIs.
+2.Fallback UI: Use isPending to display fallback UI (like a spinner or loading message) during the transition.
+3.Non-Blocking Input: Urgent updates like user input aren't blocked while transitions are processed.
+
+
+By leveraging useTransition, you can create apps that feel more responsive and maintain great performance, even for expensive computations or rendering tasks.

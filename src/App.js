@@ -29,6 +29,7 @@ import DOMDimensions from './hooks/useLayoutEffect/DOMDimensions';
 import ScrollToBottom from './hooks/useLayoutEffect/ScrollToBottom';
 import SyncedState from './hooks/useLayoutEffect/SyncedState';
 import DebugCounter from './hooks/useDebugValue/DebugCounter';
+import LargeListFilter from './hooks/useTransition/LargeListFilter';
 
 function App() {
   return (
@@ -95,7 +96,10 @@ function App() {
       {/* <DebugCounter/> */}
 
 
-      
+      {/* 11. useTransition example */}
+
+      <LargeListFilter/>
+
 
     </div>
   );
