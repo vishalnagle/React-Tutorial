@@ -33,6 +33,7 @@ import LargeListFilter from './hooks/useTransition/LargeListFilter';
 import SearchFilter from './hooks/useDeferredValue/SearchFilter';
 import StoreCounterComponent from './hooks/useSyncExternalStor/StoreCounterComponent';
 import DynamicStyles from './hooks/useInsertionEffect/DynamicStyles';
+import LifeCycleMethod from './lifecycle_methods/LifeCycleMethod';
 
 function App() {
   return (
@@ -118,6 +119,10 @@ function App() {
       {/* 16. useCacheRefresh hook doc added */}
 
       {/* 17. Custom hook examples added */}
+
+      {/* 18. Lifecycle methods doc added with examples */}
+
+      <LifeCycleMethod/>
 
     </div>
   );
