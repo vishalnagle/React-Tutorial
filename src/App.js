@@ -34,6 +34,7 @@ import SearchFilter from './hooks/useDeferredValue/SearchFilter';
 import StoreCounterComponent from './hooks/useSyncExternalStor/StoreCounterComponent';
 import DynamicStyles from './hooks/useInsertionEffect/DynamicStyles';
 import LifeCycleMethod from './lifecycle_methods/LifeCycleMethod';
+import AxiosPosts from './axios_crud/AxiosPosts';
 
 function App() {
   return (
@@ -122,7 +123,11 @@ function App() {
 
       {/* 18. Lifecycle methods doc added with examples */}
 
-      <LifeCycleMethod/>
+      {/* <LifeCycleMethod/> */}
+
+      {/* 19. Axios CRUD operations */}
+      {/* <AxiosPosts/> */}
+
 
     </div>
   );
