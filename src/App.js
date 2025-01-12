@@ -126,7 +126,9 @@ function App() {
       {/* <LifeCycleMethod/> */}
 
       {/* 19. Axios CRUD operations */}
-      {/* <AxiosPosts/> */}
+      <AxiosPosts/>
+
+
 
 
     </div>
