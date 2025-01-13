@@ -169,5 +169,22 @@ Using charting libraries like ApexCharts or Chart.js.
 Working with PDF libraries like react-pdf.
 
 
+Bonus: Emerging Concepts
+
+React Server Components (RSC)
+
+What are React Server Components?
+Advantages and examples.
+React 18 Features
+
+Automatic batching.
+Transitions.
+Concurrent rendering.
+Microfrontends with React
+
+Splitting large apps into microfrontends.
+Tools like Module Federation.
+
+
 
 
